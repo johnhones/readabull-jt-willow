@@ -1,0 +1,792 @@
+<!DOCTYPE html><!-- build:20260628000000JTW -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<title>Readerbull Audit: A Prepper&rsquo;s Handbook to Hot Process Soap Making</title>
+<style>
+  :root {
+    --teal:     #00B5AD;
+    --teal-l:   #E0F7F6;
+    --teal-d:   #007A75;
+    --orange:   #F47421;
+    --orange-l: #FFF0E6;
+    --orange-d: #C05A10;
+    --navy:     #1B3A48;
+    --mid:      #4A6070;
+    --muted:    #7A909E;
+    --light:    #F5F7F8;
+    --border:   #DDE3E7;
+    --white:    #FFFFFF;
+    --black:    #111111;
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; background:#F9FAFB; color:var(--black); line-height:1.6; font-size:13px; }
+
+  .wrap { max-width:1260px; margin:0 auto; padding:40px 32px; }
+  .g2 { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  .mb { margin-bottom:24px; }
+
+  .sec-label { font-size:14px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; color:var(--orange); margin:40px 0 16px; display:flex; align-items:center; gap:12px; }
+  .sec-label::after { content:''; flex:1; height:1px; background:var(--border); }
+
+  .card { background:var(--white); border-radius:6px; padding:28px 32px; border:1px solid var(--border); }
+  .card-hdr { font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--orange); margin-bottom:18px; padding-bottom:10px; border-bottom:1px solid var(--border); }
+  .card-title { font-size:15px; font-weight:700; color:var(--teal-d); margin-bottom:10px; line-height:1.3; }
+
+  .score-panel { background:var(--navy); border-radius:6px; padding:32px; }
+  .score-eyebrow { font-size:14px; letter-spacing:2.5px; text-transform:uppercase; color:var(--orange); margin-bottom:12px; }
+  .score-num { font-size:80px; font-weight:900; color:var(--teal); line-height:1; }
+  .score-denom { font-size:28px; color:var(--orange); font-weight:300; }
+  .score-range { display:inline-block; margin-top:10px; background:rgba(244,116,33,.18); border:1px solid rgba(244,116,33,.4); color:#fff; padding:4px 16px; border-radius:3px; font-size:11px; font-weight:400; letter-spacing:1px; }
+  .bar-row { margin-top:28px; }
+  .bar-item { margin-bottom:13px; }
+  .bar-item:last-child { margin-bottom:0; }
+  .bar-meta { display:flex; justify-content:space-between; margin-bottom:5px; }
+  .bar-lbl { font-size:12px; color:rgba(255,255,255,.7); }
+  .bar-val { font-size:12px; font-weight:700; color:rgba(255,255,255,.9); }
+  .bar-track { height:6px; background:rgba(255,255,255,.1); border-radius:3px; overflow:hidden; }
+  .bar-fill { height:100%; border-radius:3px; }
+
+  .stat-strip { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--border); border:1px solid var(--border); border-radius:6px; overflow:hidden; margin-top:20px; }
+  .stat-cell { background:var(--white); padding:16px; text-align:center; display:flex; flex-direction:column; align-items:center; }
+  .stat-cell > div:last-child { margin-top:auto; padding-top:6px; }
+  .stat-v { font-size:22px; font-weight:800; color:var(--orange); }
+  .stat-l { font-size:12px; color:var(--mid); margin-top:3px; line-height:1.4; }
+
+  .badge { display:inline-block; padding:3px 9px; border-radius:3px; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.4px; }
+  .b-teal   { background:var(--teal-l);   color:var(--teal-d); }
+  .b-orange { background:var(--orange-l); color:var(--orange-d); }
+  .b-navy   { background:rgba(27,58,72,.08); color:var(--navy); }
+  .b-muted  { background:var(--light);    color:var(--muted); }
+
+  .item { display:flex; gap:14px; align-items:flex-start; margin-bottom:20px; }
+  .item:last-child { margin-bottom:0; }
+  .item-icon { width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:800; flex-shrink:0; margin-top:1px; }
+  .icon-teal   { background:var(--teal-l);   color:var(--teal-d); }
+  .icon-orange { background:var(--orange-l); color:var(--orange-d); }
+  .item-t { font-size:15px; font-weight:700; color:var(--teal-d); margin-bottom:3px; }
+  .item-b { font-size:12px; color:var(--mid); line-height:1.6; }
+
+  .callout { border-left:3px solid var(--teal); background:var(--teal-l); padding:14px 18px; border-radius:0 4px 4px 0; font-size:12px; color:var(--navy); line-height:1.65; }
+  .callout-orange { border-left-color:var(--orange); background:var(--orange-l); }
+  .callout strong { color:var(--black); }
+
+  table { width:100%; border-collapse:collapse; font-size:12px; }
+  th { background:var(--navy); color:rgba(255,255,255,.85); padding:9px 12px; text-align:left; font-weight:600; font-size:10px; letter-spacing:.5px; text-transform:uppercase; }
+  td { padding:9px 12px; border-bottom:1px solid var(--border); color:var(--mid); }
+  tr:last-child td { border-bottom:none; }
+  tr:nth-child(even) td { background:var(--light); }
+  .tc { text-align:center; } .tr { text-align:right; }
+
+  .step { display:flex; gap:16px; align-items:flex-start; padding:18px 20px; border-radius:4px; margin-bottom:10px; }
+  .step:last-child { margin-bottom:0; }
+  .step-teal   { background:var(--teal-l);   border-left:4px solid var(--teal); }
+  .step-orange { background:var(--orange-l); border-left:4px solid var(--orange); }
+  .step-num { width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:12px; flex-shrink:0; color:#fff; }
+  .num-teal   { background:var(--teal); }
+  .num-orange { background:var(--orange); }
+  .step-t { font-size:13px; font-weight:700; color:var(--teal-d); margin-bottom:4px; }
+  .step-b { font-size:12px; color:var(--mid); line-height:1.55; }
+
+  .banner { background:var(--navy); color:#fff; border-radius:6px; padding:24px 32px; margin-bottom:24px; }
+  .banner h3 { font-size:15px; font-weight:700; margin-bottom:6px; color:#fff; }
+  .banner p  { font-size:12px; color:rgba(255,255,255,.7); line-height:1.65; }
+  .banner-stat { display:inline-block; background:var(--teal); border:1px solid var(--teal-d); color:#fff; padding:8px 18px; border-radius:3px; font-size:13px; font-weight:400; margin:8px 6px 0 0; }
+
+  .hb-card { background:var(--white); border:1px solid var(--border); border-top:4px solid var(--teal); border-radius:6px; padding:28px 32px; margin-bottom:24px; }
+  .hb-eyebrow { font-size:18px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--teal-d); margin-bottom:8px; }
+
+  .tip { position:relative; display:inline-flex; align-items:center; gap:5px; }
+  .tip-q { width:14px; height:14px; border-radius:50%; background:rgba(255,255,255,.15); color:rgba(255,255,255,.55); font-size:8px; font-weight:800; display:inline-flex; align-items:center; justify-content:center; cursor:default; flex-shrink:0; }
+  .tip-box { display:none; position:absolute; left:0; bottom:calc(100% + 8px); background:#fff; color:#1B3A48; font-size:11px; line-height:1.55; padding:9px 12px; border-radius:4px; width:210px; box-shadow:0 4px 20px rgba(0,0,0,.25); z-index:100; pointer-events:none; }
+  .tip-box::after { content:''; position:absolute; top:100%; left:8px; border:5px solid transparent; border-top-color:#fff; }
+  .tip:hover .tip-box { display:block; }
+
+  .ftr { background:var(--navy); color:rgba(255,255,255,.35); text-align:center; padding:22px; font-size:11px; }
+
+  .mob-bar { display:none; position:fixed; top:0; left:0; right:0; height:80px; background:var(--navy); z-index:500; align-items:center; justify-content:space-between; padding:0 16px; border-bottom:1px solid rgba(255,255,255,.08); }
+  .mob-logo img { height:77px; width:auto; display:block; }
+  .mob-hamburger { background:none; border:none; cursor:pointer; padding:6px; display:flex; flex-direction:column; gap:5px; }
+  .mob-hamburger span { display:block; width:22px; height:2px; background:#fff; border-radius:2px; }
+  .mob-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:350; }
+  .mob-overlay.open { display:block; }
+
+  @media(max-width:900px){
+    .g2{ grid-template-columns:1fr; gap:16px; }
+    .g2>*{ min-width:0; width:100%; }
+    .kw-tool{ grid-template-columns:1fr; }
+    .wrap{ padding:24px 16px; }
+  }
+  @media(max-width:768px){
+    body{ overflow-x:hidden; }
+    .mob-bar{ display:flex; }
+    .sidebar{ transform:translateX(-100%); transition:transform .25s ease; }
+    .sidebar.open{ transform:translateX(0); }
+    .main{ margin-left:0 !important; padding-top:80px; }
+    [id]{ scroll-margin-top:90px; }
+    .score-panel{ padding:20px; }
+    .score-num{ font-size:56px; }
+    .score-denom{ font-size:22px; }
+    .stat-strip{ grid-template-columns:1fr 1fr; }
+    .kw-table td,.kw-table th{ padding:7px 8px; font-size:11px; }
+    .scroll-top{ bottom:20px; right:16px; }
+    [style*="right:39px"]{ right:0 !important; width:100px !important; }
+    div[style*="right:39px"]{ height:133px !important; }
+    .dummy-cover-title{ font-size:18px !important; letter-spacing:0 !important; }
+  }
+  @media(max-width:600px){
+    .wrap{ padding:14px 12px; }
+    .card{ padding:16px 14px; }
+    .hb-eyebrow{ font-size:14px; }
+    .step{ padding:12px 14px; }
+    .stat-strip{ grid-template-columns:1fr; }
+  }
+
+  .sidebar { position:fixed; top:0; left:0; bottom:0; width:220px; background:var(--navy); z-index:400; display:flex; flex-direction:column; border-right:1px solid rgba(255,255,255,.07); overflow-y:auto; }
+  .sb-logo { padding:24px 12px 20px; border-bottom:1px solid rgba(255,255,255,.07); text-align:center; }
+  .sb-logo a { display:block; line-height:0; }
+  .sb-logo img { height:120px; width:auto; display:inline-block; position:relative; left:-8px; }
+  .sb-nav { padding:16px 10px; flex:1; }
+  .sb-label { font-size:9px; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,.7); padding:0 8px; margin:16px 0 6px; }
+  .sb-label:first-child { margin-top:0; }
+  .sb-nav a { display:flex; align-items:center; gap:10px; padding:9px 10px; border-radius:5px; text-decoration:none; color:rgba(255,255,255,.5); font-size:12px; margin-bottom:2px; transition:background .15s,color .15s; }
+  .sb-nav a i { font-size:16px; flex-shrink:0; }
+  .sb-nav a:hover,.sb-nav a.active { background:rgba(0,181,173,.12); color:var(--teal); }
+  .sb-nav a.act { color:rgba(244,116,33,.65); }
+  .sb-nav a.act:hover { background:rgba(244,116,33,.1); color:var(--orange); }
+  .sb-divider { border:none; border-top:1px solid rgba(255,255,255,.07); margin:12px 0; }
+  .main { margin-left:220px; }
+
+  .kw-tool { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:24px; }
+  .kw-panel { background:var(--white); border:1px solid var(--border); border-radius:6px; overflow:hidden; }
+  .kw-panel-hdr { background:#0d1f35; color:#fff; padding:14px 18px; display:flex; align-items:center; justify-content:space-between; min-height:94px; box-sizing:border-box; }
+  .kw-panel-hdr.rec { background:#0d1f35; }
+  .kw-panel-hdr span { font-size:13px; font-weight:700; }
+  .kw-count { background:var(--teal); color:#fff; font-size:10px; font-weight:700; padding:2px 8px; border-radius:20px; }
+  .kw-panel-hdr.rec .kw-count { background:var(--orange); }
+  .kw-search { padding:12px 14px; border-bottom:1px solid var(--border); display:flex; gap:8px; }
+  .kw-search input { flex:1; border:1px solid var(--border); border-radius:4px; padding:7px 10px; font-size:12px; outline:none; color:var(--black); }
+  .kw-search input:focus { border-color:var(--teal); }
+  .kw-table { width:100%; border-collapse:collapse; font-size:12px; }
+  .kw-table th { background:var(--light); color:var(--mid); padding:8px 12px; text-align:left; font-size:10px; font-weight:700; letter-spacing:.5px; text-transform:uppercase; border-bottom:1px solid var(--border); }
+  .kw-table td { padding:9px 12px; border-bottom:1px solid var(--border); color:var(--mid); }
+  .kw-table tr:last-child td { border-bottom:none; }
+  .kw-table tr:hover td { background:var(--light); }
+  .kw-table .kw-word { color:var(--navy); font-weight:500; }
+  .kw-vol { font-weight:600; color:var(--navy); }
+  .comp-high { display:inline-block; background:#FEE2E2; color:#B91C1C; font-size:10px; font-weight:700; padding:2px 8px; border-radius:3px; }
+  .comp-med  { display:inline-block; background:#FEF3C7; color:#92400E; font-size:10px; font-weight:700; padding:2px 8px; border-radius:3px; }
+  .comp-low  { display:inline-block; background:var(--teal-l); color:var(--teal-d); font-size:10px; font-weight:700; padding:2px 8px; border-radius:3px; }
+  .kw-add { background:none; border:1px solid var(--border); border-radius:3px; padding:3px 8px; font-size:10px; color:var(--muted); cursor:pointer; transition:all .15s; }
+  .kw-add:hover { border-color:var(--teal); color:var(--teal); background:var(--teal-l); }
+  .kw-rec-tag { display:inline-block; background:var(--orange-l); color:var(--orange-d); border:1px solid rgba(244,116,33,.2); border-radius:3px; padding:2px 6px; font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.5px; margin-left:4px; vertical-align:middle; }
+  .kw-na-tag { display:inline-block; background:var(--light); color:var(--muted); border:1px solid var(--border); border-radius:3px; padding:2px 6px; font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.5px; margin-left:4px; vertical-align:middle; }
+
+  .scroll-top { position:fixed; bottom:28px; right:28px; z-index:400; width:44px; height:44px; border-radius:50%; background:var(--navy); color:#fff; border:2px solid var(--teal); font-size:20px; cursor:pointer; opacity:0; pointer-events:none; transition:opacity .2s; display:flex; align-items:center; justify-content:center; }
+  .scroll-top.visible { opacity:1; pointer-events:auto; }
+  [id] { scroll-margin-top:20px; }
+</style>
+</head>
+<body>
+
+<div class="mob-bar">
+  <div class="mob-logo"><a href="#score"><img src="logo3.png" alt="Readerbull"></a></div>
+  <button class="mob-hamburger" onclick="toggleSidebar()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+<div class="mob-overlay" id="mob-overlay" onclick="toggleSidebar()"></div>
+
+<div class="sidebar" id="sidebar">
+  <div class="sb-logo"><a href="#score"><img src="logo3.png" alt="Readerbull"></a></div>
+  <nav class="sb-nav">
+    <div class="sb-label">Navigate</div>
+    <a href="#score"><i class="ti ti-chart-bar"></i>Overview</a>
+    <a href="#competitors"><i class="ti ti-users"></i>Market Analysis</a>
+    <a href="#marketing"><i class="ti ti-speakerphone"></i>Marketing Strategy</a>
+    <a href="#keywords"><i class="ti ti-search"></i>Keywords</a>
+    <a href="#quick-wins"><i class="ti ti-bolt"></i>Quick Wins</a>
+    <hr class="sb-divider">
+    <div class="sb-label">Tools</div>
+    <a href="#" class="act"><i class="ti ti-star"></i>Get Reviews</a>
+    <a href="#" class="act"><i class="ti ti-book-upload"></i>Build Your ARC</a>
+    <a href="#" class="act"><i class="ti ti-ad-2"></i>Ad Campaigns</a>
+    <hr class="sb-divider">
+    <div class="sb-label">Marketplaces</div>
+    <a href="#" onclick="return false;" class="act" style="background:rgba(244,116,33,.12);color:var(--orange);"><i class="ti ti-brand-amazon"></i>Amazon KDP</a>
+    <a href="#" onclick="return false;" class="act"><i class="ti ti-brand-tiktok"></i>TikTok Shop</a>
+    <a href="#" onclick="return false;" class="act"><i class="ti ti-building-store"></i>Barnes &amp; Noble</a>
+    <a href="#" onclick="return false;" class="act"><i class="ti ti-brand-apple"></i>Apple Books</a>
+    <a href="#" onclick="return false;" class="act"><i class="ti ti-headphones"></i>Audible / ACX</a>
+  </nav>
+</div>
+<button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8593;</button>
+
+<div class="main">
+<div class="wrap" id="score">
+
+<!-- SCORE + SUMMARY -->
+<div class="g2 mb">
+  <div style="border-radius:6px;overflow:hidden;border:1px solid var(--border);display:flex;flex-direction:column;">
+    <!-- Score + Cover — navy background -->
+    <div style="background:var(--navy);padding:32px;">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;">
+        <div>
+          <div class="score-eyebrow">Discoverability Score <span class="tip" style="position:relative;display:inline-flex;align-items:center;vertical-align:middle;gap:5px;cursor:default;"><span class="tip-q" style="border-color:rgba(244,116,33,.5);color:var(--orange);">?</span><span class="tip-box" style="font-weight:400;letter-spacing:0;text-transform:none;top:calc(100% + 8px);bottom:auto;left:0;right:auto;min-width:280px;background:#1a3550;border:1px solid rgba(0,181,173,.3);color:rgba(255,255,255,.85);padding:12px 14px;border-radius:4px;font-size:11px;line-height:1.6;box-shadow:0 4px 20px rgba(0,0,0,.4);">Your Discoverability Score measures how easy it is for readers to find and buy your book on Amazon. The higher your score, the more visible your book is and the more sales it generates.</span></span></div>
+          <div><span class="score-num" style="color:#00B5AD;">23</span><span class="score-denom">&thinsp;/ 100</span></div>
+          <div class="score-range tip" style="font-weight:400;background:rgba(0,181,173,.12);border:1px solid rgba(0,181,173,.3);position:relative;display:inline-flex;align-items:center;gap:6px;cursor:default;">Getting Started <span class="tip-q" style="border-color:rgba(255,255,255,.3);color:rgba(255,255,255,.7);font-size:9px;width:14px;height:14px;">?</span><span class="tip-box" style="font-weight:400;letter-spacing:0;text-transform:none;left:0;right:auto;min-width:220px;top:calc(100% + 8px);bottom:auto;"><strong>Getting Started:</strong> In the early stages of building discoverability. Focus on getting your listing set up correctly and gathering your first reviews. Hold off on ads until your foundations are in place.<br><br><strong>Early Stage:</strong> Your book is starting to build momentum. Continue strengthening your listing, grow your review count, and consider activating Amazon Ads.<br><br><strong>Growing:</strong> Solid foundations and gaining traction. Scale what is working: more reviews, optimised ad campaigns, and new formats.<br><br><strong>Established:</strong> Highly discoverable and performing well. Maintain momentum: protect your reviews, refine your ads, and leverage your visibility for additional titles.</span></div>
+        </div>
+        <img src="hot-process-soap-cover.jpg" alt="A Prepper's Handbook to Hot Process Soap Making by J. T. Willow" style="width:158px;border-radius:4px;display:block;flex-shrink:0;position:relative;right:39px;filter:brightness(1.5) saturate(1.1);box-shadow:0 8px 32px rgba(0,0,0,.5);">
+      </div>
+    </div>
+    <!-- Progress bars — dark navy -->
+    <div style="background:var(--navy);padding:28px 32px 32px;">
+    <div class="bar-row">
+
+      <!-- 1. Listing /20 -->
+      <div class="bar-item">
+        <div class="bar-meta">
+          <span class="bar-lbl tip">Listing <span class="tip-q">i</span>
+            <span class="tip-box">
+              Your Listing score covers your title, subtitle, description, categories, backend keywords, cover, and price. Each element plays a role in how Amazon surfaces your book to the right readers.
+            </span>
+          </span>
+          <span class="bar-val">10 / 20</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width:50%;background:var(--teal);"></div></div>
+      </div>
+
+      <!-- 2. Reviews & Ratings /20 -->
+      <div class="bar-item">
+        <div class="bar-meta">
+          <span class="bar-lbl tip">Reviews &amp; Ratings <span class="tip-q">i</span>
+            <span class="tip-box">
+              Verified reviews are one of the strongest signals Amazon uses to rank and convert books. More reviews improve organic rank, which drives more sales, which generates more reviews. Target 15 before running ads, then keep building.
+            </span>
+          </span>
+          <span class="bar-val">0</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width:1%;background:var(--teal);"></div></div>
+      </div>
+
+      <!-- 3. Star Rating /20 -->
+      <div class="bar-item">
+        <div class="bar-meta">
+          <span class="bar-lbl tip">&#9733;&#9733;&#9733;&#9733;&#9733; Rating <span class="tip-q">i</span>
+            <span class="tip-box">
+              Your star rating is the average score left by readers who have reviewed your book. A rating of 4.0 or above is the target. The best way to maintain a strong rating is to deliver on what your title and description promise.
+            </span>
+          </span>
+          <span class="bar-val">Unrated</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width:0%;background:var(--teal);"></div></div>
+      </div>
+
+      <!-- 4. Sales/mo — orange milestone bar -->
+      <div class="bar-item" style="margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.08);">
+        <div class="bar-meta">
+          <span class="bar-lbl tip">Sales/mo <span class="tip-q">i</span>
+            <span class="tip-box">
+              Your estimated monthly revenue from this book. $500/mo is your first milestone. $1,000+/mo is the target. Reviews, a hardback edition, and Amazon Ads are the most effective ways to grow this figure.
+            </span>
+          </span>
+        </div>
+        <!-- [SALES_PCT]: 0 -->
+        <div class="bar-track" style="position:relative;">
+          <div class="bar-fill" style="width:0%;background:var(--orange);"></div>
+          <div style="position:absolute;top:0;left:50%;width:2px;height:6px;background:rgba(0,0,0,.35);"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;margin-top:5px;position:relative;">
+          <span style="font-size:11px;color:rgba(255,255,255,.85);font-weight:500;position:absolute;left:50%;transform:translateX(-50%);">$500</span>
+          <span style="font-size:11px;color:rgba(255,255,255,.85);font-weight:500;margin-left:auto;">$1,000+</span>
+        </div>
+      </div>
+
+      <!-- Amazon Ads pill -->
+      <div style="margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.06);display:flex;align-items:center;gap:8px;">
+        <span class="bar-lbl tip" style="font-size:12px;position:relative;cursor:default;">Amazon Ads <span class="tip-q" style="border-color:rgba(244,116,33,.5);color:var(--orange);font-size:9px;width:14px;height:14px;">?</span><span class="tip-box" style="font-weight:400;letter-spacing:0;text-transform:none;min-width:240px;">Amazon Ads increase your book&rsquo;s visibility in search results and on competitor pages. We recommend activating ads once your listing is fully optimised and you have at least 15 reviews. Running ads before those foundations are in place wastes budget.</span></span>
+        <span style="display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;background:rgba(220,50,50,.15);border:1px solid rgba(220,50,50,.35);color:#f47171;"><span style="width:7px;height:7px;border-radius:50%;background:#f47171;display:inline-block;"></span>Not active</span>
+      </div>
+
+      <!-- BSR 3-column section -->
+      <div style="margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.06);">
+        <div style="font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#F47421;margin-bottom:12px;">Best Seller Rank</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:10px;">
+          <div style="background:rgba(255,255,255,.07);border-radius:6px;padding:10px;text-align:center;display:flex;flex-direction:column;align-items:center;">
+            <div style="font-size:9px;color:rgba(255,255,255,.5);margin-bottom:4px;text-transform:uppercase;letter-spacing:1px;min-height:36px;display:flex;align-items:center;justify-content:center;">Your BSR</div>
+            <div style="font-size:15px;font-weight:800;color:#fff;min-height:32px;display:flex;align-items:center;justify-content:center;">1,472,845</div>
+            <div style="margin-top:auto;padding-top:6px;font-size:9px;font-weight:700;background:rgba(220,50,50,.15);border:1px solid rgba(220,50,50,.35);color:#f47171;padding:2px 8px;border-radius:20px;display:inline-block;">Needs Visibility</div>
+          </div>
+          <div style="background:rgba(255,255,255,.07);border-radius:6px;padding:10px;text-align:center;display:flex;flex-direction:column;align-items:center;">
+            <div style="font-size:9px;color:rgba(255,255,255,.5);margin-bottom:4px;text-transform:uppercase;letter-spacing:1px;min-height:36px;display:flex;align-items:center;justify-content:center;">Niche Average</div>
+            <div style="font-size:15px;font-weight:800;color:#fff;min-height:32px;display:flex;align-items:center;justify-content:center;">302,321</div>
+            <div style="margin-top:auto;padding-top:6px;font-size:9px;font-weight:700;background:rgba(244,116,33,.12);border:1px solid rgba(244,116,33,.3);color:#F47421;padding:2px 8px;border-radius:20px;display:inline-block;">Similar Level</div>
+          </div>
+          <div style="background:rgba(255,255,255,.07);border-radius:6px;padding:10px;text-align:center;display:flex;flex-direction:column;align-items:center;">
+            <div style="font-size:9px;color:rgba(255,255,255,.5);margin-bottom:4px;text-transform:uppercase;letter-spacing:1px;min-height:36px;display:flex;align-items:center;justify-content:center;">Top Competitor</div>
+            <div style="font-size:15px;font-weight:800;color:#00B5AD;min-height:32px;display:flex;align-items:center;justify-content:center;">32,109</div>
+            <div style="margin-top:auto;padding-top:6px;font-size:9px;font-weight:700;background:rgba(0,181,173,.12);border:1px solid rgba(0,181,173,.3);color:#00B5AD;padding:2px 8px;border-radius:20px;display:inline-block;">Target</div>
+          </div>
+        </div>
+        <div style="font-size:10px;color:rgba(255,255,255,.65);line-height:1.5;">Your book currently ranks below the niche average, which is expected at zero reviews with no advertising. The top competitor sits at 32,109. Reviews and a targeted ad campaign are the fastest route to closing that gap.</div>
+      </div>
+    </div>
+    </div><!-- end navy bars -->
+
+  </div><!-- end left panel -->
+
+  <div style="display:flex;flex-direction:column;gap:20px;">
+    <!-- BOOK SUMMARY -->
+    <div class="card">
+      <div class="card-hdr">Book Summary</div>
+      <!-- Part 0: Header block -->
+      <div style="margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--border);">
+        <div style="font-size:22px;font-weight:400;color:#111111;line-height:1.35;margin-bottom:4px;">A Prepper&rsquo;s Handbook to Hot Process Soap Making: Simple Soap for Self-Reliant Living</div>
+        <div style="font-size:15px;color:var(--orange);margin-bottom:8px;">by J. T. Willow</div>
+        <div style="display:flex;align-items:center;gap:6px;">
+          <!-- Unrated: 5 outline stars + orange bold (0) -->
+          <span style="color:transparent;-webkit-text-stroke:1.6px #F47421;font-size:13px;letter-spacing:3px;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span style="font-size:12px;color:var(--mid);"><span style="color:var(--orange);font-weight:700;">(0)</span></span>
+        </div>
+      </div>
+      <!-- Part 1: Description paragraph -->
+      <p style="font-size:13px;color:var(--mid);line-height:1.7;margin-bottom:12px;"><em>A Prepper&rsquo;s Handbook to Hot Process Soap Making</em> is a practical, self-reliance guide to making natural soap using the hot process method. It covers everything a beginner needs to produce their own soap from scratch, and targets the growing prepper and homesteading readership. Available as a paperback at $9.99.</p>
+      <!-- Part 2: Bold niche statement (STAR format) -->
+      <p style="font-size:13px;font-weight:700;color:var(--mid);line-height:1.6;">Readerbull niche research records over $3,000 every month from the top earners across 24 soap making books. Within 6 to 12 months, your title could potentially earn up to $300 a month. Your book is already listed on Amazon with a keyword-optimized title in a confirmed buying niche. Reviews and ads are all that stand between you and that result.</p>
+      <!-- Part 3: Stat strip -->
+      <div class="stat-strip">
+        <div class="stat-cell">
+          <div class="stat-v">2</div>
+          <div class="stat-l">Books Selling Well In This Niche</div>
+          <div><span style="display:inline-block;margin-top:6px;font-size:10px;background:#FEF3C7;color:#92400E;padding:2px 10px;border-radius:20px;font-weight:700;">Medium Competition</span></div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-v">~$3.1k/mo</div>
+          <div class="stat-l">KDP Niche Revenue</div>
+          <div><span style="display:inline-block;margin-top:6px;font-size:10px;background:var(--teal-l);color:var(--teal-d);padding:2px 10px;border-radius:20px;font-weight:700;">&#10003; Real Demand</span></div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-v" style="color:var(--orange);">Evergreen</div>
+          <div class="stat-l">Content Type</div>
+          <div><span style="display:inline-block;margin-top:6px;font-size:10px;background:var(--teal-l);color:var(--teal-d);padding:2px 10px;border-radius:20px;font-weight:700;">&#10003; Stays Relevant</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROFESSIONAL ASSESSMENT -->
+    <div class="card">
+      <div class="card-hdr">Professional Assessment</div>
+      <p style="font-size:13px;color:var(--mid);line-height:1.7;margin-bottom:12px;">Readerbull niche research records over $3,000 every month from the top earners in the soap making books category. The benchmark to target first is $300 per month, generated by a book with just 23 reviews and an active ad campaign. Your book has a keyword-optimized title and is priced at $9.99.</p>
+      <p style="font-size:13px;color:var(--mid);line-height:1.7;margin-bottom:14px;">Reviews come first: build to 15 via ARC outreach before activating ads. While building reviews, fill your 7 KDP backend keyword fields and request a second category placement to strengthen organic reach. At 15 reviews, launch Sponsored Products for the paperback. Reviews, a strong listing, and ads working together move the Sales/mo bar.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:6px;">
+        <span class="badge b-teal">Keyword-Rich Title</span>
+        <span class="badge b-teal">Sub-Category #274</span>
+        <span class="badge b-teal">Paperback Available</span>
+        <span class="badge b-orange">(0) Reviews</span>
+        <span class="badge b-orange">No Ads Running</span>
+        <span class="badge b-navy">Paperback Only</span>
+        <span class="badge b-navy">$9.99</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- INSIGHT BANNER -->
+<div class="banner mb">
+  <h3>&#128161; No Reviews. No Ads. No Revenue. This Is the Gap.</h3>
+  <p>Every book earning consistently in the soap making niche has reviews and advertising. Your book has a keyword-optimized title and is priced at $9.99. The path from $0 to $300 per month begins with 15 reviews and your first ad campaign.</p>
+  <div>
+    <span class="banner-stat">Currently: $0/mo &middot; paperback only &middot; no ads</span>
+    <span class="banner-stat">Target: $300/mo &middot; 23 reviews &middot; with ads running</span>
+  </div>
+</div>
+
+<!-- MARKETING STRATEGY -->
+<div id="marketing" style="position:relative;top:-48px;"></div>
+<div class="sec-label">Marketing Strategy</div>
+
+<!-- STEP 1 -->
+<div class="card mb">
+  <div class="hb-eyebrow">Step 1: Update Your KDP Keywords</div>
+  <p style="font-size:15px;color:var(--mid);line-height:1.7;margin-bottom:16px;">Readerbull niche research finds 21 keyword variations for &ldquo;soap making books,&rdquo; with search volumes ranging from 1,027 to 4,352 monthly searches. Most of those searches include product keywords (molds, stamps, cutters) and free-book variations that are not your market. Your 7 KDP backend keyword fields need to target buyers who are actively searching for a paid craft book, not free downloads or supplies.</p>
+  <div class="item">
+    <div class="item-icon icon-orange">&#10003;</div>
+    <div>
+      <div class="item-t">Lead with buyer-intent book terms</div>
+      <div class="item-b">The highest-value keywords for your book are: &ldquo;soap making books for beginners,&rdquo; &ldquo;soap making books with recipes,&rdquo; and &ldquo;artisan soap making.&rdquo; These reach buyers looking for a paid, practical guide. Your title already includes &ldquo;hot process soap making&rdquo; which is an important long-tail term. The backend fields should extend your reach into adjacent buyer searches without duplicating what is already in your title.</div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-icon icon-orange">&#10003;</div>
+    <div>
+      <div class="item-t">Skip free-book and product keywords entirely</div>
+      <div class="item-b">Research shows high search volume for &ldquo;free soap making books,&rdquo; &ldquo;soap making free kindle books,&rdquo; and product terms like &ldquo;acrylic soap stamps&rdquo; and &ldquo;soap molds.&rdquo; None of these reach a buyer who will pay $9.99 for a paperback. Using any of them wastes a backend keyword slot. Every slot used on a product or free-book search is a slot that paying customers cannot find you through.</div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-icon icon-orange">&#10003;</div>
+    <div>
+      <div class="item-t">Lean into the prepper and homesteading angle</div>
+      <div class="item-b">Your subtitle &ldquo;Simple Soap for Self-Reliant Living&rdquo; opens the door to prepper and homesteading search terms that competitors in the soap making category are not using. Keywords like &ldquo;homesteading books&rdquo; and &ldquo;prepper books self sufficiency&rdquo; reach a highly motivated reader who is already buying multiple craft and survival guides. This is a differentiated position no competitor in your niche currently holds.</div>
+    </div>
+  </div>
+  <div class="item" style="margin-bottom:0;">
+    <div class="item-icon icon-orange">&#10003;</div>
+    <div>
+      <div class="item-t">Use the Readerbull keyword recommendations in this audit</div>
+      <div class="item-b">The keywords section below contains the buyer-intent terms filtered from niche research. Copy them directly into your 7 KDP backend keyword fields. Do not leave any fields empty: each unused field is a missed browse path.</div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:20px;"><span style="font-size:28px;color:#F47421;line-height:1;">&#8595;</span></div>
+</div>
+
+<!-- STEP 2 -->
+<div class="card mb">
+  <div class="hb-eyebrow">Step 2: Build to 15 Reviews Before Running Ads</div>
+  <p style="font-size:15px;color:var(--mid);line-height:1.7;margin-bottom:16px;">Starting from zero reviews, this is the most important action on the entire dashboard. A book with 23 reviews earns $300 per month in this niche with ads running. Reaching 15 reviews gives your listing the social proof it needs to convert ad clicks into paid sales. Every review also improves your star rating, which is the first thing buyers check before purchasing a craft book.</p>
+  <div class="callout" style="margin-bottom:16px;">Your book targets preppers and homesteaders. This readership is tight-knit, community-driven, and loyal to authors who understand the lifestyle. A well-positioned ARC campaign reaching this audience will generate reviews from readers who genuinely connect with the content.</div>
+  <div class="item">
+    <div class="item-icon icon-orange">&#10003;</div>
+    <div>
+      <div class="item-t">Use an ARC service to reach 15 to 25 reviews quickly</div>
+      <div class="item-b">BookSirens, Hidden Gems, and NetGalley connect authors with readers who have opted in to receive free books in exchange for honest reviews. These are legitimate, Amazon-compliant services. The homesteading, prepper, and natural living readership is active on these platforms. A well-targeted ARC campaign for this title could generate 15 to 25 reviews within 4 to 6 weeks.</div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-icon icon-orange">&#10003;</div>
+    <div>
+      <div class="item-t">Target prepper and homesteading communities directly</div>
+      <div class="item-b">Reddit&rsquo;s r/preppers and r/homesteading have hundreds of thousands of members. Self-sufficiency and natural living Facebook groups are populated by exactly the readers who buy this type of book. A genuine post sharing your book and offering an ARC copy will reach motivated readers who are very likely to leave a detailed, thoughtful review.</div>
+    </div>
+  </div>
+  <div class="item" style="margin-bottom:0;">
+    <div class="item-icon icon-orange">&#10003;</div>
+    <div>
+      <div class="item-t">Add a review request inside the book</div>
+      <div class="item-b">Place a natural, warm request mid-book and at the back. Many readers who genuinely enjoyed the book simply never think to leave a review without a prompt. Do not ask for a specific star rating. Amazon&rsquo;s terms prohibit this. A genuine ask yields genuine responses and costs nothing to add.</div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:20px;"><span style="font-size:28px;color:#F47421;line-height:1;">&#8595;</span></div>
+</div>
+
+<!-- STEP 3 -->
+<div class="card mb">
+  <div class="hb-eyebrow">Step 3: Optimise Categories</div>
+  <p style="font-size:15px;color:var(--mid);line-height:1.7;margin-bottom:16px;">Your book currently ranks at #274 in Soap Making Books and #80,631 in Education and Teaching. Dual-category placement is already working. The opportunity is to add a third category that is more closely aligned with your prepper-and-homesteading angle, where the competition is lighter and your book is the most relevant result in the room.</p>
+  <div class="item">
+    <div class="item-icon icon-orange">&#10003;</div>
+    <div>
+      <div class="item-t">Request Books &rsaquo; Crafts, Hobbies &amp; Home &rsaquo; Home Improvement &amp; Design &rsaquo; Cleaning, Caretaking &amp; Organizing as a third placement</div>
+      <div class="item-b">Email KDP support or use Author Central to request an additional category alongside your existing two. A sub-category with lighter competition means your BSR position translates directly into a higher browse rank. This increases the chance of earning an orange Best Seller ribbon, which improves click-through rates in search results without any additional cost.</div>
+    </div>
+  </div>
+  <div class="item" style="margin-bottom:0;">
+    <div class="item-icon icon-orange">&#10003;</div>
+    <div>
+      <div class="item-t">A Best Seller badge is achievable in the right sub-category</div>
+      <div class="item-b">As reviews and ads push your BSR down, a well-chosen sub-category with a higher BSR threshold for the top spot can deliver the orange badge. That badge appears in search results next to your cover and meaningfully improves click-through. One email to KDP support requesting the category is all it takes.</div>
+    </div>
+  </div>
+</div>
+
+<!-- STEP 4 -->
+<div class="hb-card mb">
+  <div class="hb-eyebrow">Step 4: Launch Amazon Ads for the Paperback</div>
+  <div class="g2" style="gap:32px;align-items:start;">
+    <div>
+      <p style="font-size:13px;color:var(--mid);line-height:1.7;margin-bottom:12px;">This is the action that moves your Sales/mo bar. Reviews get you ready. Ads move the bar. Start conservatively at $5/day, prove the ACoS (Advertising Cost of Sale: the percentage of each sale spent on advertising), then scale. At this price point, aim to keep ACoS below 40%. Your realistic first benchmark is $300 per month, achieved by a competitor with 23 reviews and ads running.</p>
+      <p style="font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:20px;font-style:italic;">Amazon Ads carry a financial risk when learning. Start small and ask for help and support if needed.</p>
+      <div class="item">
+        <div class="item-icon icon-orange">&#10003;</div>
+        <div>
+          <div class="item-t">Start with Sponsored Products at $5 to $7/day</div>
+          <div class="item-b">Target keyword phrases: &ldquo;soap making books for beginners,&rdquo; &ldquo;soap making books with recipes,&rdquo; and &ldquo;hot process soap making.&rdquo; These reach buyers actively looking for a paid practical guide. Run for 14 days before reviewing results. Do not increase budget until the campaign shows a profitable ACoS.</div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-icon icon-orange">&#10003;</div>
+        <div>
+          <div class="item-t">Add Sponsored Display ads on top competitor ASINs</div>
+          <div class="item-b">Target the product page of <em>The Natural Soapmaking Handbook</em> (BSR 32,109) and <em>The Soap Making Bible</em> (BSR 129,084). Buyers browsing those pages are already in a paid-book buying mindset for this exact topic. A well-placed display ad intercepts that intent at zero extra keyword cost.</div>
+        </div>
+      </div>
+      <div class="item" style="margin-bottom:0;">
+        <div class="item-icon icon-orange">&#10003;</div>
+        <div>
+          <div class="item-t">Target ACoS below 40% for profitability</div>
+          <div class="item-b">ACoS tells you what percentage of each sale went on ads. At this price point, 40% or below is your profitability target. Pause any keyword without a sale after 14 days. Scale only what converts consistently. The Soap Making Bible (23 reviews, $300/month with ads) is your realistic 60 to 90 day benchmark.</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:12px;">Best Performing Competitors: Soap Making Books</p>
+      <table style="margin-bottom:16px;">
+        <thead><tr><th>Book</th><th class="tc">Reviews</th><th class="tr">Rev/Mo</th></tr></thead>
+        <tbody>
+          <tr><td><strong>The Natural Soapmaking Handbook</strong> <span class="badge b-navy" style="font-size:9px;">Top Earner</span></td><td class="tc" style="font-weight:700;">474</td><td class="tr" style="color:var(--teal-d);font-weight:700;">$2,807</td></tr>
+          <tr><td><em>The Soap Making Bible</em> <span class="badge b-teal" style="font-size:9px;">90-Day Target</span></td><td class="tc">23</td><td class="tr" style="color:var(--teal-d);">$300</td></tr>
+        </tbody>
+      </table>
+      <div class="callout callout-orange">
+        <strong>The Soap Making Bible earns $300/month with just 23 reviews and ads running.</strong> That is your 90-day benchmark. At 15 reviews and a $5/day Sponsored Products campaign, your book is positioned to compete directly.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MARKET ANALYSIS -->
+<div id="competitors" style="position:relative;top:-48px;"></div>
+<div class="sec-label">Market Analysis</div>
+<div class="card mb">
+  <div class="g2" style="gap:32px;align-items:start;">
+    <div>
+      <div class="card-title">Niche Summary</div>
+      <div class="callout" style="margin-bottom:18px;">
+        The soap making books niche is active with paying buyers and growing search demand. The most accessible target in this niche is $300 per month, produced by a book with just 23 reviews and an active ad campaign. The gap between $0 and $300 is two things: reviews and advertising.
+      </div>
+      <div class="item">
+        <div class="item-icon icon-orange">&#10003;</div>
+        <div>
+          <div class="item-t">A book with 23 reviews earns $300 per month</div>
+          <div class="item-b">The Soap Making Bible earns $300 per month with 23 reviews and a paid paperback. This is your 90-day target. It shows that a moderate review count with ads produces consistent revenue in this niche without requiring hundreds of reviews. Your book needs 15 reviews to reach the launchpad for this outcome.</div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-icon icon-orange">&#10003;</div>
+        <div>
+          <div class="item-t">Your BSR of 1,472,845 sits above the niche average</div>
+          <div class="item-b">The niche average BSR is 302,321. Your book currently sits above that level, which is expected at zero reviews with no advertising. As reviews drive organic rank and ads drive paid visibility, your BSR will fall toward and then below the niche average. Every sale moves the number down and compounds future discoverability.</div>
+        </div>
+      </div>
+      <div class="item" style="margin-bottom:0;">
+        <div class="item-icon icon-orange">&#10003;</div>
+        <div>
+          <div class="item-t">Your $9.99 price is 38% below the niche average of $16.15</div>
+          <div class="item-b">Pricing at $9.99 makes your book attractive to price-sensitive buyers but compresses your royalty margin. Once reviews build confidence in the title, consider moving to $11.99 or $12.99. A higher price point means your ad spend converts more profitably: the same ACoS produces more net income per sale.</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:12px;">Niche Data: Soap Making Books (2 of 24 books with revenue data)</p>
+      <table style="margin-bottom:16px;">
+        <thead><tr><th>Book</th><th class="tc">BSR</th><th class="tr">Rev/Mo</th><th class="tc">Reviews</th><th class="tc">Ads</th></tr></thead>
+        <tbody>
+          <tr><td><strong>The Natural Soapmaking Handbook</strong> <span class="badge" style="background:rgba(0,181,173,.15);color:var(--teal);font-size:9px;">Top Earner</span></td><td class="tc">32,109</td><td class="tr" style="color:var(--teal-d);font-weight:700;">$2,807</td><td class="tc">474</td><td class="tc"><span class="badge b-muted">Unknown</span></td></tr>
+          <tr><td><em>The Soap Making Bible</em> <span class="badge b-orange" style="font-size:9px;">90-Day Target</span></td><td class="tc">129,084</td><td class="tr" style="color:var(--teal-d);">$300</td><td class="tc">23</td><td class="tc"><span class="badge b-muted">Unknown</span></td></tr>
+          <tr><td style="font-weight:700;color:var(--teal-d);">Your Book</td><td class="tc">1,472,845</td><td class="tr" style="color:var(--orange);">$0</td><td class="tc">0</td><td class="tc"><span class="badge b-muted">No</span></td></tr>
+        </tbody>
+      </table>
+      <div class="callout callout-orange">
+        Revenue data is available for 2 of the 24 books in this niche. The niche average monthly revenue is $900 per book across the full keyword search. Full competitor revenue data will produce a more complete picture.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ADDITIONAL OPPORTUNITY / BOOK PORTFOLIO -->
+<div class="sec-label">Book Portfolio Opportunity</div>
+<div class="card mb" style="border-top:4px solid var(--orange);">
+  <div class="g2" style="gap:32px;align-items:start;">
+    <div>
+      <div class="card-title">A Second Title Compounds Discoverability</div>
+      <div class="callout callout-orange" style="margin-bottom:18px;">
+        <strong>Two books by the same author in the same niche cross-sell each other automatically.</strong> Amazon&rsquo;s &ldquo;customers also bought&rdquo; system means every reader who buys one title is shown the other. Each new title also adds a new keyword footprint, a new category placement, and a new set of search rankings.
+      </div>
+      <div class="item">
+        <div class="item-icon icon-orange">1</div>
+        <div>
+          <div class="item-t">Hot Process Soap Making for Beginners: Step-by-Step Recipes for Natural Handmade Soap</div>
+          <div class="item-b">The keyword &ldquo;soap making books for beginners&rdquo; generates 1,589 monthly searches and is one of the strongest buyer-intent terms in the niche. A companion beginner guide would capture this traffic directly, cross-sell from your existing title, and own two positions in the same search results page.</div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-icon icon-orange">2</div>
+        <div>
+          <div class="item-t">The Prepper&rsquo;s Guide to Natural Home Products: DIY Soap, Shampoo, and Cleaning Essentials for Off-Grid Living</div>
+          <div class="item-b">This extends your prepper angle into adjacent self-reliance products. The same buyer who purchases your soap making guide is also looking for shampoo, cleaning products, and natural remedies. A broader self-reliance guide reaches a larger audience with a higher per-book value and opens doors into the homesteading and off-grid categories.</div>
+        </div>
+      </div>
+      <div class="item" style="margin-bottom:0;">
+        <div class="item-icon icon-orange">3</div>
+        <div>
+          <div class="item-t">Artisan Soap Making with Essential Oils: 30 Natural Recipes for Beautiful Handmade Soap</div>
+          <div class="item-b">The keyword &ldquo;artisan soap making&rdquo; generates 2,380 monthly searches and is the highest-volume non-product, non-free search term in the research. A recipes-led artisan guide targets a more premium buyer looking for beautiful, gift-worthy soap. This is a different reader profile from the prepper audience and expands your total addressable market significantly.</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:12px;">2026 Keyword Timing Opportunity</p>
+      <div class="callout" style="margin-bottom:14px;">
+        The keyword &ldquo;soap making books 2026&rdquo; generates 1,154 monthly searches and is a confirmed buyer-intent timing term. Readers actively search for the most current guide in a craft category. Publishing a second title in late 2026 with a 2026 or 2027 positioning in the title or subtitle is a low-cost way to capture this timing-specific traffic before competitors do.
+      </div>
+      <div class="callout callout-orange">
+        <strong>Focus on Steps 1 to 4 first.</strong> Get your reviews to 15 and your first ad campaign running before writing anything new. Once the existing book earns consistently, these second-title opportunities represent low-competition entry points with built-in cross-sell potential from day one.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- KEYWORDS -->
+<div id="keywords" style="position:relative;top:-48px;"></div>
+<div class="sec-label">Keywords</div>
+<div class="callout" style="margin-bottom:18px;">
+  <strong>Readerbull niche research for &ldquo;Soap Making Books&rdquo; (21 keywords found).</strong> Confirmed search volumes shown. Free-book variations, product supply terms, and non-English keywords have been flagged as Skip. These are not your buyer. The Readerbull Recommended panel shows the buyer-intent terms suited to your paperback. Click <strong>+ Add</strong> to save to your KDP list.
+</div>
+<div class="kw-tool">
+  <div class="kw-panel">
+    <div class="kw-panel-hdr">
+      <span><i class="ti ti-brand-amazon" style="margin-right:6px;font-size:14px;vertical-align:middle;"></i>Amazon Keywords</span>
+      <span class="kw-count" id="amazon-count">21</span>
+    </div>
+    <div class="kw-search">
+      <input type="text" id="amazon-search" placeholder="Search keywords&hellip;" oninput="filterTable('amazon-tbody','amazon-count',this.value)">
+    </div>
+    <div style="overflow-x:auto;">
+      <table class="kw-table">
+        <thead><tr><th>Keyword</th><th class="tr">Volume</th><th class="tc">Status</th><th></th></tr></thead>
+        <tbody id="amazon-tbody">
+          <tr><td class="kw-word">soap making books</td><td class="tr kw-vol">Medium</td><td class="tc"><span class="comp-high">Use</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">soap books for soap making</td><td class="tr kw-vol">High</td><td class="tc"><span class="comp-high">Use</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">soap making books for beginners</td><td class="tr kw-vol">Medium</td><td class="tc"><span class="comp-high">Use</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">soap making books with recipes</td><td class="tr kw-vol">Medium</td><td class="tc"><span class="comp-high">Use</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">artisan soap making</td><td class="tr kw-vol">High</td><td class="tc"><span class="comp-med">Use</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">amish soap making</td><td class="tr kw-vol">Medium</td><td class="tc"><span class="comp-med">Use</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">glycerin soap making books</td><td class="tr kw-vol">Low</td><td class="tc"><span class="comp-med">Use</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">all natural soap making recipes books</td><td class="tr kw-vol">Low</td><td class="tc"><span class="comp-med">Use</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">aloe soap making</td><td class="tr kw-vol">Medium</td><td class="tc"><span class="comp-med">Use</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">soap making books 2026</td><td class="tr kw-vol">Low</td><td class="tc"><span class="comp-med">Use</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">free soap making books</td><td class="tr kw-vol">High</td><td class="tc"><span class="comp-low">Skip</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">soap making books free</td><td class="tr kw-vol">Low</td><td class="tc"><span class="comp-low">Skip</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">soap making free kindle books</td><td class="tr kw-vol">Medium</td><td class="tc"><span class="comp-low">Skip</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">free kindle books soap making</td><td class="tr kw-vol">Low</td><td class="tc"><span class="comp-low">Skip</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">soap making books spanish</td><td class="tr kw-vol">Low</td><td class="tc"><span class="comp-low">Skip</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">acrylic soap cutters for soap making</td><td class="tr kw-vol">Medium</td><td class="tc"><span class="comp-low">Skip</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">acrylic soap stamps for soap making</td><td class="tr kw-vol">Medium</td><td class="tc"><span class="comp-low">Skip</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">animal soap molds for soap making</td><td class="tr kw-vol">High</td><td class="tc"><span class="comp-low">Skip</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">aloe soap base for soap making</td><td class="tr kw-vol">Medium</td><td class="tc"><span class="comp-low">Skip</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">baby soap molds for soap making</td><td class="tr kw-vol">Medium</td><td class="tc"><span class="comp-low">Skip</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">bag making books</td><td class="tr kw-vol">High</td><td class="tc"><span class="comp-low">Skip</span></td><td><button class="kw-add">+ Add</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="kw-panel">
+    <div class="kw-panel-hdr rec">
+      <span><div style="display:inline-block;width:66px;height:66px;overflow:hidden;vertical-align:middle;margin-right:10px;flex-shrink:0;border-radius:50%;"><img src="logo3.png" style="width:66px;height:auto;display:block;"></div>Readerbull Recommended Keywords</span>
+      <span class="kw-count" id="rec-count">8</span>
+    </div>
+    <div class="kw-search">
+      <input type="text" id="rec-search" placeholder="Filter recommendations&hellip;" oninput="filterTable('rec-tbody','rec-count',this.value)">
+    </div>
+    <div style="overflow-x:auto;">
+      <table class="kw-table">
+        <thead><tr><th>Keyword</th><th class="tr">Volume</th><th class="tc">Status</th><th></th></tr></thead>
+        <tbody id="rec-tbody">
+          <tr><td class="kw-word">soap making books for beginners</td><td class="tr kw-vol">Medium</td><td class="tc"><span class="comp-high">Priority</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">soap making books</td><td class="tr kw-vol">Medium</td><td class="tc"><span class="comp-high">Priority</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">soap making books with recipes</td><td class="tr kw-vol">Medium</td><td class="tc"><span class="comp-med">Best Fit</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">artisan soap making</td><td class="tr kw-vol">High</td><td class="tc"><span class="comp-med">Best Fit</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">soap books for soap making</td><td class="tr kw-vol">High</td><td class="tc"><span class="comp-med">Best Fit</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">amish soap making</td><td class="tr kw-vol">Medium</td><td class="tc"><span class="comp-med">Best Fit</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">glycerin soap making books</td><td class="tr kw-vol">Low</td><td class="tc"><span class="comp-med">Best Fit</span></td><td><button class="kw-add">+ Add</button></td></tr>
+          <tr><td class="kw-word">all natural soap making recipes books</td><td class="tr kw-vol">Low</td><td class="tc"><span class="comp-med">Best Fit</span></td><td><button class="kw-add">+ Add</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- QUICK WINS -->
+<div id="quick-wins" style="position:relative;top:-48px;"></div>
+<div class="sec-label">Quick Wins</div>
+<div class="card mb">
+  <div class="card-hdr">Do These in Order: Sequence Matters</div>
+  <div class="step step-orange">
+    <div class="step-num num-orange">1</div>
+    <div>
+      <div class="step-t">Fill all 7 KDP backend keyword fields this week</div>
+      <div class="step-b">Lead with &ldquo;soap making books for beginners,&rdquo; &ldquo;soap making books with recipes,&rdquo; and &ldquo;artisan soap making.&rdquo; Add prepper and homesteading adjacent terms to differentiate from competitors who only target soap-making keywords. Takes 15 minutes. Costs nothing. Increases the number of searches your book can appear in immediately.</div>
+    </div>
+  </div>
+  <div class="step step-orange">
+    <div class="step-num num-orange">2</div>
+    <div>
+      <div class="step-t">Sign up to an ARC service and target 15 to 25 reviews</div>
+      <div class="step-b">BookSirens or Hidden Gems. The prepper, homesteading, and natural living readership is active on these platforms. This is the fastest legitimate path from zero reviews to the 15-review threshold needed for ads to convert profitably. Target 15 to 25 ARC readers. Expect results within 4 to 6 weeks.</div>
+    </div>
+  </div>
+  <div class="step step-orange">
+    <div class="step-num num-orange">3</div>
+    <div>
+      <div class="step-t">Reach prepper and homesteading communities directly</div>
+      <div class="step-b">Reddit&rsquo;s r/preppers and r/homesteading, plus natural living Facebook groups, are populated by exactly the reader who buys this book. A genuine post offering free ARC copies in exchange for an honest review can generate 10 to 20 reviews at zero cost. This readership is loyal and detailed in its reviews.</div>
+    </div>
+  </div>
+  <div class="step step-orange">
+    <div class="step-num num-orange">4</div>
+    <div>
+      <div class="step-t">Request a third category from KDP and add a review prompt inside the book</div>
+      <div class="step-b">Email KDP support to request an additional category in Crafts and Home Improvement alongside your existing two placements. At the same time, update your paperback file with a warm review request mid-book and at the back. Both actions permanently improve future sales without ongoing cost.</div>
+    </div>
+  </div>
+  <div class="step step-teal">
+    <div class="step-num num-teal">5</div>
+    <div>
+      <div class="step-t">Launch Sponsored Products at $5 to $7/day once at 15 reviews</div>
+      <div class="step-b">Target &ldquo;soap making books for beginners,&rdquo; &ldquo;soap making books with recipes,&rdquo; and &ldquo;hot process soap making.&rdquo; Add Sponsored Display on the ASINs for <em>The Natural Soapmaking Handbook</em> and <em>The Soap Making Bible</em>. Review ACoS at day 14. Pause non-converting keywords. Scale what converts. Benchmark: The Soap Making Bible at $300/month with 23 reviews.</div>
+    </div>
+  </div>
+</div>
+
+<!-- READERBULL ASSESSMENT -->
+<div class="sec-label">Readerbull Assessment</div>
+<div class="card mb">
+  <p style="font-size:13px;color:var(--mid);line-height:1.85;">The data is clear. Every book earning revenue in the soap making books niche has reviews and active advertising. Your book has a keyword-optimized title, two confirmed category placements, and a distinctive prepper-and-self-reliance angle that no direct competitor currently owns. The foundation is solid. The gap is execution.</p>
+  <p style="font-size:13px;color:var(--mid);line-height:1.85;margin-top:12px;">Fill your backend keywords and launch an ARC campaign this week. Build to 15 reviews. Request a third category. At 15 reviews, launch Sponsored Products at $5/day for the paperback. The 90-day target is $300 per month. The 12-month goal is $825 or above as your review count compounds.</p>
+  <div style="margin-top:20px;background:var(--navy);border-radius:6px;padding:16px 20px;">
+    <div style="font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-bottom:10px;">Your action sequence:</div>
+    <div style="font-size:12px;color:rgba(255,255,255,.75);line-height:1.75;">1. Fill 7 backend keyword fields &nbsp;&rarr;&nbsp; 2. Launch ARC campaign (target 15 to 25 reviews) &nbsp;&rarr;&nbsp; 3. Request third category &nbsp;&rarr;&nbsp; 4. Add review prompt inside the book &nbsp;&rarr;&nbsp; 5. Launch Sponsored Products at 15 reviews &nbsp;&rarr;&nbsp; 6. Scale on profitable ACoS</div>
+  </div>
+  <p style="font-size:12px;color:var(--muted);line-height:1.75;margin-top:14px;">This audit is part of the Readerbull platform. For coaching, ad campaign management, or Done For You services, contact Readerbull directly.</p>
+</div>
+
+<!-- NOTE FROM AUTHOR -->
+<div style="margin:0 24px 32px;background:#0d2137;border-radius:8px;padding:20px 24px;border:1px solid rgba(0,181,173,.15);">
+  <p style="font-size:13px;color:rgba(255,255,255,.85);line-height:1.75;margin:0 0 12px;"><span style="color:var(--teal);font-weight:700;">Note from J. T. Willow:</span> I would welcome the opportunity to support you on your publishing journey.</p>
+  <p style="font-size:13px;color:rgba(255,255,255,.75);line-height:1.75;margin:0 0 12px;">Whether you are looking for free coaching support or a managed service, I can help you with sponsored ad campaigns, editing, formatting, or cover design and more.</p>
+  <p style="font-size:13px;color:rgba(255,255,255,.75);line-height:1.75;margin:0;">Please feel free to send me a direct message if you&rsquo;d like to explore further.</p>
+</div>
+
+</div>
+</div>
+
+<div class="ftr">Readerbull Book Audit &nbsp;&middot;&nbsp; A Prepper&rsquo;s Handbook to Hot Process Soap Making &nbsp;&middot;&nbsp; June 2026</div>
+
+<script>
+function toggleSidebar(){var sb=document.getElementById('sidebar'),ov=document.getElementById('mob-overlay');sb.classList.toggle('open');ov.classList.toggle('open');}
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('.sb-nav a').forEach(function(l){l.addEventListener('click',function(){if(window.innerWidth<=768)toggleSidebar();});});});
+function filterTable(tbodyId,countId,query){var tbody=document.getElementById(tbodyId),countEl=document.getElementById(countId),rows=tbody.querySelectorAll('tr'),q=query.toLowerCase(),visible=0;rows.forEach(function(row){var text=row.querySelector('.kw-word').textContent.toLowerCase(),show=text.indexOf(q)!==-1;row.style.display=show?'':'none';if(show)visible++;});countEl.textContent=visible;}
+document.addEventListener('click',function(e){if(e.target.classList.contains('kw-add')&&e.target.textContent==='+ Add'){e.target.textContent='&#10003; Added';e.target.style.background='var(--teal-l)';e.target.style.color='var(--teal-d)';e.target.style.borderColor='var(--teal)';}});
+(function(){
+  var btn=document.querySelector('.scroll-top');
+  window.addEventListener('scroll',function(){btn.classList.toggle('visible',window.scrollY>400);});
+  var nav=document.querySelector('nav.sb-nav');
+  if(!nav)return;
+  var navLinks=Array.from(nav.querySelectorAll('a[href^="#"]:not(.act)'));
+  var sectionIds=navLinks.map(function(a){return a.getAttribute('href').slice(1);}).filter(Boolean);
+  var domOrderIds=sectionIds.filter(function(id){return document.getElementById(id);});
+  domOrderIds.sort(function(a,b){return document.getElementById(a).offsetTop-document.getElementById(b).offsetTop;});
+  function getActiveId(){var scrollY=window.scrollY+150,active=domOrderIds[0];domOrderIds.forEach(function(id){var el=document.getElementById(id);if(el&&el.getBoundingClientRect().top+window.scrollY<=scrollY)active=id;});return active;}
+  function setActive(id){navLinks.forEach(function(a){a.classList.remove('active');});var al=nav.querySelector('a[href="#'+id+'"]');if(al)al.classList.add('active');}
+  document.addEventListener('DOMContentLoaded',function(){setActive(getActiveId());});
+  var ticking=false;
+  window.addEventListener('scroll',function(){if(!ticking){window.requestAnimationFrame(function(){setActive(getActiveId());ticking=false;});ticking=true;}});
+})();
+(function(){function eqKwH(){var hdrs=document.querySelectorAll('.kw-panel-hdr');if(hdrs.length<2)return;hdrs.forEach(function(h){h.style.minHeight='';});var mH=0;hdrs.forEach(function(h){mH=Math.max(mH,h.offsetHeight);});hdrs.forEach(function(h){h.style.minHeight=mH+'px';});}document.addEventListener('DOMContentLoaded',eqKwH);window.addEventListener('resize',eqKwH);})();
+</script>
+</body>
+</html>
